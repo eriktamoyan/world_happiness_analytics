@@ -16,15 +16,6 @@ world-happiness-hedonic-treadmill/
 └── README.md
 ```
 
-Run in order — `01` first, always:
-```bash
-mysql -u your_user -p < 01_schema_and_views.sql
-mysql -u your_user -p < 02_cross_sectional_anomalies.sql
-mysql -u your_user -p < 03_hedonic_time_series.sql
-```
-`02` and `03` read from views `01` creates and no longer overwrite each other's objects.
-
----
 
 ## Data
 
